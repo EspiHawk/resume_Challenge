@@ -28,13 +28,11 @@
         const { createApp } = Vue
 
         const app = createApp({
-            data() {
-                return {
+            data: () => ({
                     message: '2',
-                    
-                }
-            }
-        })
+                                        
+                })
+            })
 
         app.mount('#app')
     </script>
