@@ -10,15 +10,16 @@
     <h1 class="name">Miguel Espinal</h1>    
     <h2 class="title">Resume Challenge</h2>
 
-    <div class="counterBox" id="app">
-        <p v-if="message.length % 2 ===0">Total number of visits: {{message}} </p>
-        <p v-else>Total number of visits is odd: {{message}}</p>
-        
-    </div>
-   
+    <template class="counterBox" id="app">
+        <div>
+          <p>Page Views: <strong>{{ pageViews }}</strong></p>
+        </div>
+      </template>
+      
+
     <p class="mainInfo">This project was started on 05/11/2024. Below you can see when it was last updated. My goal is to acquire skills and make a real difference in this world.</p>
     <div class="links">
-        <div><a href="https://github.com/EspiHawk"><img src="/img/github-icon-color.svg" alt="github icon and link"><br>GITHUB</a></div>
+        <div><a href="https://github.com/EspiHawk"><img src="img\github-icon-color.svg" alt="github icon"><br>GITHUB</a></div>
     
     </div>
     <footer>Espinal 05/11/2024</footer>
